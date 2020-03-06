@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.medjay.shop_save">
+    package="com.example.karim.shopandsave">
 
     <application
         android:allowBackup="true"
@@ -16,6 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Home" />
+        <activity android:name=".Home_categories" />
+        <activity android:name=".Product_details" />
+        <activity android:name=".Buy"></activity>
     </application>
 
 </manifest>

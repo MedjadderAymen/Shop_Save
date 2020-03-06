@@ -1,3 +1,15 @@
 <resources>
-    <string name="app_name">Shop_Save</string>
+    <string name="app_name">ShopandSave</string>
+    <string name="tit_insc">Bienvenue sur L\'fidelle ! Enregistrer vous et benificier d\'une infinité de produits au meilleur prix </string>
+    <string name="username">Username</string>
+    <string name="phone">Phone</string>
+    <string name="inscrir">S\'inscrir</string>
+    <string name="password">Mot de passe</string>
+    <string name="passwordconf">Confirmation</string>
+    <string name="login">Se connecter</string>
+    <string name="logintit">Pour avoir plus de privilèges dans l\'application, Connectez-vous!</string>
+    <string name="passtxt">Vous avez oublié votre mot de passe ?</string>
+    <string name="respass">Reset</string>
+    <string name="accueil">Accueil</string>
+    <string name="categories">Catégories</string>
 </resources>
