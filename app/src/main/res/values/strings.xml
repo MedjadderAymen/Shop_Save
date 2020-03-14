@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ShopandSave</string>
+    <string name="app_name">Shop and Save</string>
     <string name="tit_insc">Bienvenue sur L\'fidelle ! Enregistrer vous et benificier d\'une infinité de produits au meilleur prix </string>
     <string name="username">Username</string>
     <string name="phone">Phone</string>
@@ -12,4 +12,17 @@
     <string name="respass">Reset</string>
     <string name="accueil">Accueil</string>
     <string name="categories">Catégories</string>
+    <string name="add_articl">Ajouter un article :</string>
+    <string name="add_pictures">Ajouter des photos</string>
+    <string name="articl_name">Le nom d\'article :</string>
+    <string name="old_price">Ancien prix :</string>
+    <string name="new_price">nouveau prix :</string>
+    <string name="validation">Validation</string>
+    <string name="montant">Montant :</string>
+    <string name="willaya">Willaya :</string>
+    <string name="valid_articl">les article valide</string>
+    <string name="invalid_articl">les article invalide</string>
+    <string name="add">Ajouter</string>
+    <string name="market_name">Le nom de boutique :</string>
+    <string name="address">Address :</string>
 </resources>

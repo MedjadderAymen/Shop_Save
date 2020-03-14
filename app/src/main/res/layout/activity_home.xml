@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Home">
+    android:layout_height="match_parent">
 
     <TextView
         android:layout_width="wrap_content"
@@ -13,13 +12,25 @@
         android:layout_marginTop="15dp"
         android:layout_marginLeft="15dp"
         android:id="@+id/accueil"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="@color/colorAccent"
         />
     <com.luseen.spacenavigation.SpaceNavigationView
         android:id="@+id/space"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom"
         android:layout_alignParentBottom="true"
-        />
+        app:active_item_color="@color/colorAccent"
+        app:centre_button_color="@color/centre_button_color"
+        app:space_background_color="@android:color/white"
+        app:active_centre_button_background_color="@color/colorAccent"
+        app:inactive_centre_button_icon_color="@color/white"
+        app:active_centre_button_icon_color="@color/white"
+        app:centre_button_icon="@drawable/ic_add_black_24dp"
+        app:space_item_icon_size="@dimen/space_item_icon_default_size" />
+
     
     <ListView
         android:layout_width="match_parent"
@@ -27,7 +38,7 @@
         android:layout_below="@id/accueil"
         android:layout_above="@id/space"
         android:layout_marginTop="10dp"
-        ></ListView>
+        />
 
 
 </RelativeLayout>

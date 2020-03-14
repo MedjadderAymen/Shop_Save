@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Buy">
+    android:layout_height="match_parent">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -31,31 +30,62 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/header"
-        android:background="@drawable/background"
+        android:padding="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/widget_edittext_dark"
         >
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Montant"
-            android:id="@+id/montant"
-            />
-
-        <EditText
+            android:id="@+id/tv2"
+            android:textSize="20dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textStyle="bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/montant"
-            android:layout_marginTop="5dp"
-            android:id="@+id/amount"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/amount"
-            android:layout_below="@id/montant"
-            android:text="DZD"
+            android:text="@string/montant"/>
+        <RelativeLayout
+            android:id="@+id/amount_container"
+            android:layout_below="@id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#fff"
+            android:padding="10dp">
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:id="@+id/amount"
+                android:layout_height="50dp"
+                android:layout_toLeftOf="@id/DZD"
+                android:background="@android:color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="DZD"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:id="@+id/DZD"
+
+                />
+
+
+        </RelativeLayout>
+        <Button
+
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:layout_below="@id/amount_container"
+            android:layout_marginTop="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonlogin"
+            android:hint="@string/validation"
+            android:onClick="login"
+            android:padding="20dp"
+            android:textAlignment="center"
+            android:textColorHint="@color/white"
+            android:textSize="18dp"
+            android:id="@+id/login"
+
 
             />
-
     </RelativeLayout>
 
 </RelativeLayout>

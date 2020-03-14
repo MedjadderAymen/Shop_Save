@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:background="@color/white">
+
+
+    <ImageButton
+        android:id="@+id/goToMyLocalisation"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+android:layout_centerVertical="true"        android:layout_margin="10dp"
+        android:background="@drawable/bg_circle"
+        android:elevation="10dp"
+        android:src="@drawable/ic_gps_fixed_small" />
+
+    <ImageButton
+        android:id="@+id/zoomin"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/goToMyLocalisation"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_circle"
+        android:elevation="10dp"
+        android:src="@drawable/ic_zoom_in_black_24dp" />
+
+    <ImageButton
+        android:id="@+id/zoomout"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/zoomin"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/bg_circle"
+        android:elevation="10dp"
+        android:src="@drawable/ic_zoom_out_black_24dp" />
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/map"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        />
+
+        <Button
+            android:id="@+id/add_new_ch"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/add"
+            android:layout_margin="20dp"
+            android:textColor="@color/white"
+            android:background="@drawable/buttonlogin"
+            android:layout_alignParentBottom="true"/>
+</RelativeLayout>

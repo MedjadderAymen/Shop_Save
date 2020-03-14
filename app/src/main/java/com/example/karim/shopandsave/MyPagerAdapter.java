@@ -1,15 +1,19 @@
 package com.example.karim.shopandsave;
 
 import android.content.Context;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
+//import android.support.annotation.Nullable;
+//import android.support.v4.app.Fragment;
+//import android.support.v4.app.FragmentManager;
+//import android.support.v4.app.FragmentPagerAdapter;
+
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
 
 public class MyPagerAdapter extends FragmentPagerAdapter {
     private Context ctx;
-
-    public MyPagerAdapter( Context ctx,FragmentManager fm) {
+    public MyPagerAdapter(Context ctx, FragmentManager fm) {
         super(fm);
         this.ctx = ctx;
     }
@@ -21,9 +25,9 @@ public class MyPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int i) {
         switch (i) {
             case 0:
-                return new ListeTrash();
+                return new Login();
             case 1:
-                return new MapTrash();
+                return new Inscription();
         }
         return null;
     }
@@ -33,9 +37,9 @@ public class MyPagerAdapter extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position) {
         switch (position) {
             case 0:
-                return "Trash List";
+                return "Login";
             case 1:
-                return "Trash Map";
+                return "Inscription";
         }
         return null;
     }

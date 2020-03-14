@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!-- Main Content View -->
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<TextView
+    android:id="@+id/client_name"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:text="Medjader aymen"
+    android:gravity="center"
+
+    android:textColor="@color/colorPrimaryDark"
+    android:layout_alignParentStart="true"
+    android:textSize="20dp"/>
+
+<TextView
+    android:id="@+id/price"
+    android:layout_below="@id/client_name"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:gravity="center_vertical"
+    android:text="6.000 DA"
+    android:layout_toLeftOf="@id/state"
+    android:textStyle="bold"
+    android:layout_alignParentStart="true"
+    android:textSize="35dp"/>
+<TextView
+    android:id="@+id/date"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+android:gravity="center"
+    android:text="23-10-2019"
+    android:layout_alignParentRight="true"
+    android:textSize="15dp"/>
+<TextView
+    android:id="@+id/state"
+    android:layout_below="@id/client_name"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:text="valide"
+    android:textColor="@android:color/holo_green_light"
+    android:textStyle="bold"
+    android:gravity="center"
+    android:layout_alignParentRight="true"
+    android:textSize="20dp"/>
+</RelativeLayout>

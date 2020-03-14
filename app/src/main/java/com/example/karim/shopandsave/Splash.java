@@ -3,34 +3,26 @@ package com.example.karim.shopandsave;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.view.Window;
-import android.view.WindowManager;
+//import android.support.v7.app.AppCompatActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-
-public class MainActivity extends AppCompatActivity {
+public class Splash extends AppCompatActivity {
     private final int SPLASH_DISPLAY_LENGTH = 2000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-
-
-        setContentView(R.layout.activity_main);
-
+        setContentView(R.layout.splash);
+        getSupportActionBar().hide();
         new Handler().postDelayed(new Runnable(){
             @Override
             public void run() {
                 /* Create an Intent that will start the Menu-Activity. */
-                Intent mainIntent = new Intent(MainActivity.this,MainActivity.class);
+                Intent mainIntent = new Intent(Splash.this,Main2Activity.class);
 
-                    MainActivity.this.startActivity(mainIntent);
-
-
-
-                MainActivity.this.finish();
+                    Splash.this.startActivity(mainIntent);
+                Splash.this.finish();
             }
         }, SPLASH_DISPLAY_LENGTH);
 

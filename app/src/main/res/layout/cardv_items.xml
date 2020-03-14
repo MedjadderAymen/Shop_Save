@@ -3,46 +3,54 @@
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image"
+        android:src="@color/colorPrimary"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:id="@+id/prod_img"
-        android:src="@color/colorAccent"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/prod_img"
-        android:layout_marginTop="10dp"
-        android:textSize="15dp"
-        android:text="soufflé thon"
-        android:id="@+id/title_prod"
-        />
+        android:layout_height="200dp"/>
     <RelativeLayout
-        android:layout_width="wrap_content"
+        android:padding="15dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/title_prod"
-        android:id="@+id/price"
-        android:layout_centerHorizontal="true"
-        >
+        android:layout_below="@id/image">
         <TextView
+            android:id="@+id/product_name"
+            android:layout_alignParentTop="true"
+            android:textSize="23dp"
+            android:padding="10dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="Nom d'article"/>
+
+        <TextView
+            android:id="@+id/old_price"
+            android:layout_below="@id/product_name"
+            android:textSize="18dp"
+            android:layout_alignParentStart="true"
+            android:padding="10dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textStyle="bold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="420DZD"
-            android:id="@+id/oldprice"
-            android:textSize="12dp"
-            />
+            android:text="420DZD"/>
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/oldprice"
-            android:layout_marginLeft="10dp"
-            android:text="350DZD"
+            android:id="@+id/new_price"
+            android:layout_below="@id/product_name"
+            android:textSize="25dp"
+            android:layout_alignParentEnd="true"
+            android:padding="10dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textStyle="bold"
             android:textColor="@color/colorAccent"
-            android:textSize="12dp"
-            />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="350DZD"/>
     </RelativeLayout>
 
 </RelativeLayout>
